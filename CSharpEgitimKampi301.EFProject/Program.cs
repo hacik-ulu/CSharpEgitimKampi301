@@ -1,22 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.Extensions.DependencyInjection;
+using System;
 using System.Windows.Forms;
 
 namespace CSharpEgitimKampi301.EFProject
 {
-    internal static class Program
+    static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
+        // Uygulamanın giriş noktası
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            // ServiceCollection üzerinden DI yapılandırmasını yapıyoruz
+            var services = new ServiceCollection();
+
+            // DbContext'i ekliyoruz. Eğer DbContext konfigürasyonu varsa burada belirtilebilir.
+            services.AddSingleton<EgitimKampiEfTravelDbEntities1>();
+
+            // Form1'i DI ile başlatıyoruz
+            services.AddSingleton<Form1>();
+
+            // ServiceProvider üzerinden uygulama başlatılıyor
+            var serviceProvider = services.BuildServiceProvider();
+
+            // Form1'i DI konteynerinden alıp başlatıyoruz
+            var form = serviceProvider.GetService<Form1>();
+
+            // Form1'i çalıştırıyoruz
+            Application.Run(form);
         }
     }
 }
