@@ -17,7 +17,7 @@ namespace CSharpEgitimKampi301.EFProject
             services.AddSingleton<EgitimKampiEfTravelDbEntities1>();
 
             // Form1'i DI ile başlatıyoruz
-            services.AddSingleton<FrmLocation>();
+            services.AddSingleton<FrmStatistics>();
 
             // TblLocation nesnesini ekliyoruz
             services.AddSingleton<TblLocation>();
@@ -27,7 +27,7 @@ namespace CSharpEgitimKampi301.EFProject
             var serviceProvider = services.BuildServiceProvider();
 
             // Form1'i DI konteynerinden alıp başlatıyoruz
-            var form = serviceProvider.GetService<FrmLocation>();
+            var form = serviceProvider.GetService<FrmStatistics>();
 
             // Form1'i çalıştırıyoruz
             Application.Run(form);
