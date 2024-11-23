@@ -99,7 +99,6 @@
             this.lblLocationCount.Size = new System.Drawing.Size(34, 26);
             this.lblLocationCount.TabIndex = 2;
             this.lblLocationCount.Text = "00";
-            this.lblLocationCount.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -210,7 +209,6 @@
             this.label8.Size = new System.Drawing.Size(134, 19);
             this.label8.TabIndex = 1;
             this.label8.Text = "Ortalama Kapasite ";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // panel5
             // 
@@ -266,7 +264,6 @@
             this.lblLastCountryName.Size = new System.Drawing.Size(34, 26);
             this.lblLastCountryName.TabIndex = 2;
             this.lblLastCountryName.Text = "00";
-            this.lblLastCountryName.Click += new System.EventHandler(this.lblLastCountryName_Click);
             // 
             // label12
             // 
@@ -333,7 +330,6 @@
             this.lblTurkeyCapacityAverage.Size = new System.Drawing.Size(34, 26);
             this.lblTurkeyCapacityAverage.TabIndex = 2;
             this.lblTurkeyCapacityAverage.Text = "00";
-            this.lblTurkeyCapacityAverage.Click += new System.EventHandler(this.label15_Click);
             // 
             // label16
             // 
