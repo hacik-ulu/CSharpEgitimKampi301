@@ -127,7 +127,7 @@
             // 
             this.lblSumCapacity.AutoSize = true;
             this.lblSumCapacity.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSumCapacity.Location = new System.Drawing.Point(57, 65);
+            this.lblSumCapacity.Location = new System.Drawing.Point(41, 65);
             this.lblSumCapacity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSumCapacity.Name = "lblSumCapacity";
             this.lblSumCapacity.Size = new System.Drawing.Size(34, 26);
