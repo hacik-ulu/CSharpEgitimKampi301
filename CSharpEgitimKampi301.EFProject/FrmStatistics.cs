@@ -43,6 +43,7 @@ namespace CSharpEgitimKampi301.EFProject
             var guideIdCount = db.TblLocation.Where(x => x.GuideId == 2).Count();
             #endregion
 
+            #region LİNQ
             lblLocationCount.Text = db.TblLocation.Count().ToString();
             lblSumCapacity.Text = ((decimal)db.TblLocation.Sum(x => x.Capacity)).ToString("F2");
             lblGuideCount.Text = db.TblGuide.Count().ToString();
@@ -55,7 +56,7 @@ namespace CSharpEgitimKampi301.EFProject
             lblMostExpensiveTour.Text = db.TblLocation.Where(x => x.Price == mostExpensiveTour).Select(y => y.Country + " " + y.City).FirstOrDefault().ToString();
             lblGuideLocationCount.Text = guideIdCount.ToString();
             lblLastCountryName.Text = lastCountry;
-
+            #endregion
 
         }
 
@@ -67,6 +68,6 @@ namespace CSharpEgitimKampi301.EFProject
 
 
 
-       
+
     }
 }
