@@ -37,6 +37,11 @@ namespace CSharpEgitimKampi301.BusinessLayer.Concrete
             return _productDal.GetById(id);
         }
 
+        public List<Object> TGetProductsWithCategory()
+        {
+            return _productDal.GetProductsWithCategory();
+        }
+
         public void TUpdate(Product entity)
         {
             _productDal.Update(entity);
