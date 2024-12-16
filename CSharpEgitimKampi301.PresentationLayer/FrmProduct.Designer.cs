@@ -38,13 +38,13 @@
             this.btnList = new System.Windows.Forms.Button();
             this.txtProductId = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtPrice = new System.Windows.Forms.TextBox();
             this.txtProductPrice = new System.Windows.Forms.Label();
             this.txtDescription = new System.Windows.Forms.TextBox();
             this.txtProductCategory = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtStock = new System.Windows.Forms.TextBox();
             this.txtProductStock = new System.Windows.Forms.Label();
-            this.cmbCategory = new System.Windows.Forms.ComboBox();
+            this.cmbProductCategory = new System.Windows.Forms.ComboBox();
             this.txtProductDescription = new System.Windows.Forms.Label();
             this.btn2List = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,6 +58,7 @@
             this.btnGetById.TabIndex = 25;
             this.btnGetById.Text = "ID\'ye Göre Getir";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // btnUpdate
             // 
@@ -67,6 +68,7 @@
             this.btnUpdate.TabIndex = 24;
             this.btnUpdate.Text = "Güncelle";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -86,6 +88,7 @@
             this.btnAdd.TabIndex = 22;
             this.btnAdd.Text = "Ekle";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtProductName
             // 
@@ -138,12 +141,12 @@
             this.label1.TabIndex = 13;
             this.label1.Text = "Ürün ID:";
             // 
-            // textBox1
+            // txtPrice
             // 
-            this.textBox1.Location = new System.Drawing.Point(97, 165);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 20);
-            this.textBox1.TabIndex = 27;
+            this.txtPrice.Location = new System.Drawing.Point(97, 165);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.Size = new System.Drawing.Size(150, 20);
+            this.txtPrice.TabIndex = 27;
             // 
             // txtProductPrice
             // 
@@ -171,12 +174,12 @@
             this.txtProductCategory.TabIndex = 28;
             this.txtProductCategory.Text = "Kategori:";
             // 
-            // textBox3
+            // txtStock
             // 
-            this.textBox3.Location = new System.Drawing.Point(97, 130);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 20);
-            this.textBox3.TabIndex = 31;
+            this.txtStock.Location = new System.Drawing.Point(97, 130);
+            this.txtStock.Name = "txtStock";
+            this.txtStock.Size = new System.Drawing.Size(150, 20);
+            this.txtStock.TabIndex = 31;
             // 
             // txtProductStock
             // 
@@ -187,13 +190,13 @@
             this.txtProductStock.TabIndex = 30;
             this.txtProductStock.Text = "Ürün Stok:";
             // 
-            // cmbCategory
+            // cmbProductCategory
             // 
-            this.cmbCategory.FormattingEnabled = true;
-            this.cmbCategory.Location = new System.Drawing.Point(97, 205);
-            this.cmbCategory.Name = "cmbCategory";
-            this.cmbCategory.Size = new System.Drawing.Size(150, 21);
-            this.cmbCategory.TabIndex = 32;
+            this.cmbProductCategory.FormattingEnabled = true;
+            this.cmbProductCategory.Location = new System.Drawing.Point(97, 205);
+            this.cmbProductCategory.Name = "cmbProductCategory";
+            this.cmbProductCategory.Size = new System.Drawing.Size(150, 21);
+            this.cmbProductCategory.TabIndex = 32;
             // 
             // txtProductDescription
             // 
@@ -222,12 +225,12 @@
             this.ClientSize = new System.Drawing.Size(1608, 584);
             this.Controls.Add(this.btn2List);
             this.Controls.Add(this.txtProductDescription);
-            this.Controls.Add(this.cmbCategory);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.cmbProductCategory);
+            this.Controls.Add(this.txtStock);
             this.Controls.Add(this.txtProductStock);
             this.Controls.Add(this.txtDescription);
             this.Controls.Add(this.txtProductCategory);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.txtProductPrice);
             this.Controls.Add(this.btnGetById);
             this.Controls.Add(this.btnUpdate);
@@ -259,13 +262,13 @@
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.TextBox txtProductId;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtPrice;
         private System.Windows.Forms.Label txtProductPrice;
         private System.Windows.Forms.TextBox txtDescription;
         private System.Windows.Forms.Label txtProductCategory;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtStock;
         private System.Windows.Forms.Label txtProductStock;
-        private System.Windows.Forms.ComboBox cmbCategory;
+        private System.Windows.Forms.ComboBox cmbProductCategory;
         private System.Windows.Forms.Label txtProductDescription;
         private System.Windows.Forms.Button btn2List;
     }
